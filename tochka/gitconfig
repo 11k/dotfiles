@@ -1,0 +1,8 @@
+[user]
+	name = Farhad Jay
+	email = effejaye@gmail.com
+[core]
+	excludesfile = ~/.gitignore_global
+	editor = vim
+[push]
+    default = simple

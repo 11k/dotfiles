@@ -1,0 +1,63 @@
+" Show line numbers.
+set number
+
+" Tab stops every four columns.
+set tabstop=4
+
+" Shift lines by four columns when using reindent operations.
+set shiftwidth=4
+
+" Expand tabs to spaces.
+set expandtab
+
+" All searches are case insensitive except when searching for something with an uppercase character.
+set ignorecase
+set smartcase
+
+" Switch between buffers without a warning.
+set hidden
+
+" Use UTF-8 encoding.
+set encoding=utf-8
+set fileencoding=utf-8
+
+" Use system clipboard by default.
+set clipboard=unnamed
+
+" Reload a file when it changes on disk.
+set autoread
+
+" Use `C-h` and `C-l` to navigate between buffers.
+nnoremap <C-h> :bp<CR>
+nnoremap <C-l> :bn<CR>
+
+" Use `C-n` to show/hide NERDTree.
+nnoremap <silent> <C-n> :NERDTreeToggle<CR>
+
+" Toggle fzf to find files.
+nnoremap <silent> <C-p> :Files<CR>
+
+" Toggle ripgrep to search through files.
+nnoremap <C-S-f> :Rg<CR>
+
+" Show 'buffer tabs'.
+let g:airline#extensions#tabline#enabled = 1
+
+" Use the 'minimalist' vim-airline theme.
+let g:airline_theme = 'minimalist'
+
+" Identify directories containing `package.json` as 'project directories' for
+" rooter. The other values are the defaults for this variable.
+let g:rooter_patterns = ['.git', '_darcs', '.hg', '.bzr', '.svn', 'Makefile', 'package.json']
+
+" Disable rooter announcing that it changed directories when vim starts.
+let g:rooter_silent_chdir = 1
+
+" Ensure vim-prettier's default tab width matches prettier's default tab
+" width.
+let g:prettier#config#tab_width = 2
+
+" Auto format files on save if there's a `.prettierrc` in the current dir or a
+" parent.
+let g:prettier#autoformat = 1
+let g:prettier#autoformat_require_pragma = 0

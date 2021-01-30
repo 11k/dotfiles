@@ -1,0 +1,17 @@
+# Include commands and bindings from /etc/inputrc
+$include /etc/inputrc
+
+# Cycle through possible completions
+"\C-p":history-search-backward
+"\C-n":history-search-forward
+
+# Ignore case for completions
+set completion-ignore-case On
+
+# Truncate file names when listing completions
+set completion-prefix-display-length 3
+
+# Show all possible completions immediately
+set show-all-if-ambiguous On
+set show-all-if-unmodified On
+

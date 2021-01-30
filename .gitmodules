@@ -2,3 +2,27 @@
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
 	ignore = dirty
+[submodule "tochka/vim/pack/plugins/start/fzf"]
+	path = tochka/vim/pack/plugins/start/fzf
+	url = https://github.com/junegunn/fzf.git
+[submodule "tochka/vim/pack/plugins/start/fzf.vim"]
+	path = tochka/vim/pack/plugins/start/fzf.vim
+	url = https://github.com/junegunn/fzf.vim
+[submodule "tochka/vim/pack/plugins/start/nerdtree"]
+	path = tochka/vim/pack/plugins/start/nerdtree
+	url = https://github.com/preservim/nerdtree
+[submodule "tochka/vim/pack/plugins/start/vim-polyglot"]
+	path = tochka/vim/pack/plugins/start/vim-polyglot
+	url = https://github.com/sheerun/vim-polyglot.git
+[submodule "tochka/vim/pack/plugins/start/vim-airline"]
+	path = tochka/vim/pack/plugins/start/vim-airline
+	url = https://github.com/vim-airline/vim-airline.git
+[submodule "tochka/vim/pack/plugins/start/vim-airline-themes"]
+	path = tochka/vim/pack/plugins/start/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes.git
+[submodule "tochka/vim/pack/plugins/start/vim-rooter"]
+	path = tochka/vim/pack/plugins/start/vim-rooter
+	url = https://github.com/airblade/vim-rooter.git
+[submodule "tochka/vim/pack/plugins/start/vim-prettier"]
+	path = tochka/vim/pack/plugins/start/vim-prettier
+	url = https://github.com/prettier/vim-prettier.git

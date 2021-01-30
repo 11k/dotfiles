@@ -1,5 +1,18 @@
 - clean: ['~']
 
 - link:
-
+    ~/.bash_profile: tochka/bash_profile
+    ~/.p10k.zsh: tochka/p10k.zsh
+    ~/.zshrc: tochka/zshrc
+    ~/.zsh: tochka/zsh
+    ~/.vim: tochka/vim
+    ~/.gitconfig: tochka/gitconfig
+    ~/.gitignore_global: tochka/gitignore_global
+    ~/.inputrc: tochka/inputrc
+    ~/.tmux.conf: tochka/tmux.conf
+    ~/.vimrc: tochka/vimrc
+    ~/.alacritty.yml: tochka/alacritty.yml
+    ~/.hammerspoon:
+        if: '[ $(uname) = Darwin ]'
+        path: tochka/hammerspoon
 
