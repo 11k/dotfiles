@@ -44,7 +44,7 @@ nnoremap <C-S-f> :Rg<CR>
 let g:airline#extensions#tabline#enabled = 1
 
 " Use the 'minimalist' vim-airline theme.
-let g:airline_theme = 'minimalist'
+let g:airline_theme = 'violet'
 
 " Identify directories containing `package.json` as 'project directories' for
 " rooter. The other values are the defaults for this variable.
