@@ -1,11 +1,11 @@
 " Show line numbers.
 set number
 
-" Tab stops every four columns.
-set tabstop=4
+" Tab stops every two columns.
+set tabstop=2
 
-" Shift lines by four columns when using reindent operations.
-set shiftwidth=4
+" Shift lines by two columns when using reindent operations.
+set shiftwidth=2
 
 " Expand tabs to spaces.
 set expandtab
