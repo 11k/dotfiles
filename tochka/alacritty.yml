@@ -297,10 +297,12 @@ colors:
 #   - (macOS) /bin/bash --login
 #   - (Linux/BSD) user login shell
 #   - (Windows) powershell
-#shell:
-#  program: /bin/bash
-#  args:
-#    - --login
+shell:
+  program: /usr/bin/zsh
+  args:
+    - -l
+    - -c
+    - '[ -z "$TMUX"  ] && { tmux attach || exec tmux new-session && exit; }'
 
 # Startup directory
 #
