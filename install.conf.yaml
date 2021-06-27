@@ -9,6 +9,7 @@
     ~/.gitconfig: tochka/gitconfig
     ~/.gitignore_global: tochka/gitignore_global
     ~/.inputrc: tochka/inputrc
+    ~/.tmux: tochka/tmux
     ~/.tmux.conf: tochka/tmux.conf
     ~/.vimrc: tochka/vimrc
     ~/.alacritty.yml: tochka/alacritty.yml

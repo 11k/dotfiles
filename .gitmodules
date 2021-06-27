@@ -26,3 +26,6 @@
 [submodule "tochka/vim/pack/plugins/start/vim-prettier"]
 	path = tochka/vim/pack/plugins/start/vim-prettier
 	url = https://github.com/prettier/vim-prettier.git
+[submodule "tochka/tmux/plugins/tmux-resurrect"]
+	path = tochka/tmux/plugins/tmux-resurrect
+	url = https://github.com/tmux-plugins/tmux-resurrect.git
