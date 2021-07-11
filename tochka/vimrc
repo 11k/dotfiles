@@ -35,6 +35,10 @@ nnoremap <C-l> :bn<CR>
 " https://stackoverflow.com/a/31806379
 nnoremap X :bp\|bd #<CR>
 
+" Use `gt` and `gT` to switch between buffers rather than tabs.
+nnoremap gT :bp<CR>
+nnoremap gt :bn<CR>
+
 " Use `C-n` to show/hide NERDTree.
 nnoremap <silent> <C-n> :NERDTreeToggle<CR>
 
