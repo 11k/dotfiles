@@ -31,6 +31,10 @@ set autoread
 nnoremap <C-h> :bp<CR>
 nnoremap <C-l> :bn<CR>
 
+" Close a buffer and navigate to the previous one with `X`.
+" https://stackoverflow.com/a/31806379
+nnoremap X :bp\|bd #<CR>
+
 " Use `C-n` to show/hide NERDTree.
 nnoremap <silent> <C-n> :NERDTreeToggle<CR>
 
