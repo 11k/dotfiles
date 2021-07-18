@@ -1,28 +1,3 @@
-[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
-
-# tmux
-alias tmux-jay=" \
-    tmux new-session -s jay -n あ \; \
-        new-window -n い \; \
-        split-window -h \; \
-        select-pane -t 0 \; \
-        new-window -n う \; \
-        split-window -v \; \
-        select-pane -t 0 \; \
-        new-window -n え \; \
-        split-window -v \; \
-        split-window -v \; \
-        select-layout even-vertical \; \
-        select-pane -t 0 \; \
-        new-window -n お \; \
-        split-window -v \; \
-        split-window -h \; \
-        select-pane -t 0 \; \
-        split-window -h \; \
-        select-pane -t 0 \; \
-        select-window -t 0 \; \
-"
-
 # Solarized Colors
 BASE03="\[\033[38;5;234m\]"
 BASE02="\[\033[38;5;235m\]"
@@ -43,4 +18,3 @@ GREEN="\[\033[38;5;64m\]"
 CLEAR="\[\033[0m\]"
 
 PS1="${BLUE}\u${BASE1}@${BLUE}\h${BASE1}:${BLUE}\W ${BASE1}>>>${CLEAR} "
-
