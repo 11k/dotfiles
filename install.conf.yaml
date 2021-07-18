@@ -2,6 +2,7 @@
 
 - link:
     ~/.bash_profile: tochka/bash_profile
+    ~/.bashrc: tochka/bashrc
     ~/.p10k.zsh: tochka/p10k.zsh
     ~/.zshrc: tochka/zshrc
     ~/.zsh: tochka/zsh
