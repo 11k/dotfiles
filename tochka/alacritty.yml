@@ -61,7 +61,7 @@ colors:
     white:   '#282a2e'
 
 shell:
-  program: /usr/bin/zsh
+  program: zsh
   args:
     - -l
     - -c
