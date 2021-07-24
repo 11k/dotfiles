@@ -23,7 +23,7 @@ font:
   bold_italic:
     style: Bold Italic
 
-  size: 12
+  size: 14
 
   glyph_offset:
     y: 2
