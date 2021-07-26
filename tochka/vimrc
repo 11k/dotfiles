@@ -21,8 +21,9 @@ set hidden
 set encoding=utf-8
 set fileencoding=utf-8
 
-" Use system clipboard by default.
-set clipboard=unnamedplus
+" Use system clipboard for yanks in both macOS and Linux.
+" https://stackoverflow.com/a/30691754
+set clipboard=unnamed,unnamedplus
 
 " Reload a file when it changes on disk.
 set autoread
