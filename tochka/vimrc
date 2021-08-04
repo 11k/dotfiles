@@ -49,6 +49,12 @@ nnoremap <silent> <C-p> :Files<CR>
 " Toggle ripgrep to search through files.
 nnoremap <C-S-f> :Rg<CR>
 
+" Highlight current line and set highlight colors.
+set cursorline
+:hi CursorLine cterm=none ctermbg=235 guibg='#3a3a3a'
+:hi CursorColumn cterm=none ctermbg=235 guibg='#3a3a3a'
+:hi CursorLineNr cterm=none ctermbg=235 guibg='#3a3a3a'
+
 " Show 'buffer tabs'.
 let g:airline#extensions#tabline#enabled = 1
 
