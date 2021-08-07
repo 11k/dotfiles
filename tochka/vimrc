@@ -53,7 +53,10 @@ nnoremap <C-S-f> :Rg<CR>
 set cursorline
 :hi CursorLine cterm=none ctermbg=235 guibg='#3a3a3a'
 :hi CursorColumn cterm=none ctermbg=235 guibg='#3a3a3a'
-:hi CursorLineNr cterm=none ctermbg=235 guibg='#3a3a3a'
+:hi CursorLineNr cterm=none ctermfg=250 ctermbg=235 guibg='#3a3a3a'
+
+" Set line number color.
+:hi LineNr ctermfg=240
 
 " Show 'buffer tabs'.
 let g:airline#extensions#tabline#enabled = 1
