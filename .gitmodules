@@ -32,3 +32,6 @@
 [submodule "tochka/vim/pack/plugins/start/vim-obsession"]
 	path = tochka/vim/pack/plugins/start/vim-obsession
 	url = https://github.com/tpope/vim-obsession.git
+[submodule "tochka/oh-my-zsh"]
+	path = tochka/oh-my-zsh
+	url = https://github.com/ohmyzsh/ohmyzsh.git
