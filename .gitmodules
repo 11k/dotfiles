@@ -35,3 +35,6 @@
 [submodule "tochka/oh-my-zsh"]
 	path = tochka/oh-my-zsh
 	url = https://github.com/ohmyzsh/ohmyzsh.git
+[submodule "tochka/vim/pack/plugins/start/vim-tmux-navigator"]
+	path = tochka/vim/pack/plugins/start/vim-tmux-navigator
+	url = https://github.com/christoomey/vim-tmux-navigator.git
