@@ -80,5 +80,14 @@ let g:prettier#config#tab_width = 2
 let g:prettier#autoformat = 1
 let g:prettier#autoformat_require_pragma = 0
 
+" Customize vim-tmux-navigator mappings.
+let g:tmux_navigator_no_mappings = 1
+
+nnoremap <silent> <Esc>h :TmuxNavigateLeft<cr>
+nnoremap <silent> <Esc>j :TmuxNavigateDown<cr>
+nnoremap <silent> <Esc>k :TmuxNavigateUp<cr>
+nnoremap <silent> <Esc>l :TmuxNavigateRight<cr>
+nnoremap <silent> <Esc>\ :TmuxNavigatePrevious<cr>
+
 " Hide `Press ? for help` in NERDTree window.
 let NERDTreeMinimalUI = 1
