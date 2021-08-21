@@ -1,18 +1,13 @@
-source ~/.zsh/antigen.zsh
+export PATH=$HOME/bin:/usr/local/bin:$PATH
+export ZSH=$HOME/.oh-my-zsh
 
-antigen use oh-my-zsh
+ZSH_THEME="random"
+DISABLE_AUTO_UPDATE="true"
 
-antigen bundle ssh-agent
-antigen theme random
+plugins=(ssh-agent)
 
-antigen apply
+source $ZSH/oh-my-zsh.sh
 
-export PATH=/usr/local/bin:$PATH
+# User configuration
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-# Modify zsh completion system to make lowercase letters match lowercase and
-# uppercase letters.
-# https://superuser.com/a/1092328
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
-autoload -Uz compinit && compinit
