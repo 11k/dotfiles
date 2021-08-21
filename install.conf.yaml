@@ -4,6 +4,7 @@
     ~/.bash_profile: tochka/bash_profile
     ~/.bashrc: tochka/bashrc
     ~/.zshrc: tochka/zshrc
+    ~/.zsh: tochka/zsh
     ~/.vim: tochka/vim
     ~/.gitconfig: tochka/gitconfig
     ~/.gitignore_global: tochka/gitignore_global
