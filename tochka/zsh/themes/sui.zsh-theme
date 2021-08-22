@@ -19,9 +19,9 @@ VIOLET=$FG[170]
 # Git prompt settings
 ZSH_THEME_GIT_PROMPT_PREFIX=" $BRIGHT_WHITE$(echo $ARROW) $LIGHT_GRAY"
 ZSH_THEME_GIT_PROMPT_DIRTY=" $BRIGHT_WHITE$(echo $ARROW) $LIGHT_GRAY*"
-ZSH_THEME_GIT_PROMPT_AHEAD=" $BRIGHT_WHITE$(echo $ARROW) $LIGHT_GRAY$(echo $UP_ARROW)"
-ZSH_THEME_GIT_PROMPT_BEHIND=" $BRIGHT_WHITE$(echo $ARROW) $LIGHT_GRAY$(echo $DOWN_ARROW)"
-ZSH_THEME_GIT_PROMPT_DIVERGED=" $BRIGHT_WHITE$(echo $ARROW) $LIGHT_GRAY$(echo $UP_DOWN_ARROW)"
+ZSH_THEME_GIT_PROMPT_AHEAD_REMOTE=" $BRIGHT_WHITE$(echo $ARROW) $LIGHT_GRAY$(echo $UP_ARROW)"
+ZSH_THEME_GIT_PROMPT_BEHIND_REMOTE=" $BRIGHT_WHITE$(echo $ARROW) $LIGHT_GRAY$(echo $DOWN_ARROW)"
+ZSH_THEME_GIT_PROMPT_DIVERGED_REMOTE=" $BRIGHT_WHITE$(echo $ARROW) $LIGHT_GRAY$(echo $UP_DOWN_ARROW)"
 ZSH_THEME_GIT_PROMPT_SUFFIX=""
 
 function createDivider {
@@ -37,7 +37,7 @@ function createDivider {
 }
 
 PS1='$DIM_GRAY$(echo $TOP_RIGHT_CORNER)$(createDivider)
-$(echo $BOTTOM_LEFT_CORNER) $LIGHT_GRAY%~$(git_prompt_info)$(git_prompt_status) $VIOLET$(echo $ARROW)%{$reset_color%} '
+$(echo $BOTTOM_LEFT_CORNER) $LIGHT_GRAY%~$(git_prompt_info)$(git_remote_status) $VIOLET$(echo $ARROW)%{$reset_color%} '
 RPS1='$DIM_GRAY$(echo $SUI)%{$reset_color%}'
 
 PS2='$DIM_GRAY$(echo $BOTTOM_LEFT_CORNER) $VIOLET$(echo $ARROW) %{$reset_color%}'
