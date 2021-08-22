@@ -1,20 +1,27 @@
 # Symbols
 ARROW="\u203a" # ›
+SUI="\u7c8b" # 粋
+
 BOTTOM_LEFT_CORNER="\u2514" # └
 TOP_RIGHT_CORNER="\u250c" # ┌
 HORIZONTAL_LINE="\u2500" # ─
-SUI="\u7c8b" # 粋
+
+UP_ARROW="\u2b61" # ⭡
+DOWN_ARROW="\u2b63" # 🠗
+UP_DOWN_ARROW="\u2b65" # ⭥
 
 # Colors
 LIGHT_GRAY=$FG[251]
 DIM_GRAY=$FG[237]
 BRIGHT_WHITE=$FG[231]
 VIOLET=$FG[170]
-GREEN=$FG[035]
 
 # Git prompt settings
 ZSH_THEME_GIT_PROMPT_PREFIX=" $BRIGHT_WHITE$(echo $ARROW) $LIGHT_GRAY"
 ZSH_THEME_GIT_PROMPT_DIRTY=" $BRIGHT_WHITE$(echo $ARROW) $LIGHT_GRAY*"
+ZSH_THEME_GIT_PROMPT_AHEAD=" $BRIGHT_WHITE$(echo $ARROW) $LIGHT_GRAY$(echo $UP_ARROW)"
+ZSH_THEME_GIT_PROMPT_BEHIND=" $BRIGHT_WHITE$(echo $ARROW) $LIGHT_GRAY$(echo $DOWN_ARROW)"
+ZSH_THEME_GIT_PROMPT_DIVERGED=" $BRIGHT_WHITE$(echo $ARROW) $LIGHT_GRAY$(echo $UP_DOWN_ARROW)"
 ZSH_THEME_GIT_PROMPT_SUFFIX=""
 
 function createDivider {
@@ -30,7 +37,7 @@ function createDivider {
 }
 
 PS1='$DIM_GRAY$(echo $TOP_RIGHT_CORNER)$(createDivider)
-$(echo $BOTTOM_LEFT_CORNER) $LIGHT_GRAY%~$(git_prompt_info) $VIOLET$(echo $ARROW)%{$reset_color%} '
+$(echo $BOTTOM_LEFT_CORNER) $LIGHT_GRAY%~$(git_prompt_info)$(git_prompt_status) $VIOLET$(echo $ARROW)%{$reset_color%} '
 RPS1='$DIM_GRAY$(echo $SUI)%{$reset_color%}'
 
 PS2='$DIM_GRAY$(echo $BOTTOM_LEFT_CORNER) $VIOLET$(echo $ARROW) %{$reset_color%}'
