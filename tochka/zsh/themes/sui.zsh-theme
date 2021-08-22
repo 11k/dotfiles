@@ -31,7 +31,7 @@ function createDivider {
 }
 
 PS1='$DIM_GRAY$(echo $TOP_RIGHT_CORNER)$(createDivider)
-$(echo $BOTTOM_LEFT_CORNER) $LIGHT_GRAY%n$BRIGHT_WHITE@$LIGHT_GRAY%m$BRIGHT_WHITE:$LIGHT_GRAY%1~$(git_prompt_info) $VIOLET$(echo $ARROW)%{$reset_color%} '
+$(echo $BOTTOM_LEFT_CORNER) $LIGHT_GRAY%~$(git_prompt_info) $VIOLET$(echo $ARROW)%{$reset_color%} '
 RPS1='$DIM_GRAY$(echo $SUI)%{$reset_color%}'
 
 PS2='$DIM_GRAY$(echo $BOTTOM_LEFT_CORNER) $VIOLET$(echo $ARROW) %{$reset_color%}'
