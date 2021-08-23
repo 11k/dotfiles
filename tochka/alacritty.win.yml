@@ -4,10 +4,12 @@ window:
     lines: 24
 
   padding:
-    x: 10
-    y: 6
+    x: 4
+    y: 4
 
-  title: hi
+  # This setting doesn't seem to work on Windows. Use the `--title` flag when
+  # launching Alacritty instead.
+  # title: hi
 
 font:
   normal:
@@ -67,18 +69,6 @@ shell:
     - '[ -z "$TMUX"  ] && { tmux attach || exec tmux new-session && exit; }'
 
 key_bindings:
-  # Make alt act as meta for certain key combinations in macOS. The
-  # `alt_send_esc` option doesn't seem to work.
-  # https://github.com/alacritty/alacritty/issues/2017#issuecomment-581707489
-  - { key: H,              mods: Alt,                chars: "\x1Bh"           }
-  - { key: H,              mods: Alt|Shift,          chars: "\x1BH"           }
-  - { key: J,              mods: Alt,                chars: "\x1Bj"           }
-  - { key: J,              mods: Alt|Shift,          chars: "\x1BJ"           }
-  - { key: K,              mods: Alt,                chars: "\x1Bk"           }
-  - { key: K,              mods: Alt|Shift,          chars: "\x1BK"           }
-  - { key: L,              mods: Alt,                chars: "\x1Bl"           }
-  - { key: L,              mods: Alt|Shift,          chars: "\x1BL"           }
-
   # Disable the `Control + Shift + F` search shortcut so we can use it to
   # trigger ripgrep in vim. Only relevant in Windows.
   # https://github.com/alacritty/alacritty/issues/4090#issuecomment-670264927
