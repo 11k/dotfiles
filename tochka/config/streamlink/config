@@ -2,3 +2,4 @@ default-stream=best
 player=mpv
 player-args=--no-keepaspect-window
 title={author} - {category} - {title}
+loglevel=error
