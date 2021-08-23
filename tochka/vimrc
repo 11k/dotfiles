@@ -1,6 +1,13 @@
 " Show line numbers.
 set number
 
+" Set maximum text width to 80 characters.
+set textwidth=80
+
+" Draw a line down 81st column.
+set colorcolumn=81
+:hi ColorColumn cterm=none ctermbg=235 guibg='#3a3a3a'
+
 " Tab stops every two columns.
 set tabstop=2
 
@@ -10,7 +17,8 @@ set shiftwidth=2
 " Expand tabs to spaces.
 set expandtab
 
-" All searches are case insensitive except when searching for something with an uppercase character.
+" All searches are case insensitive except when searching for something with an
+" uppercase character.
 set ignorecase
 set smartcase
 
@@ -66,7 +74,15 @@ let g:airline_theme = 'violet'
 
 " Identify directories containing `package.json` as 'project directories' for
 " rooter. The other values are the defaults for this variable.
-let g:rooter_patterns = ['.git', '_darcs', '.hg', '.bzr', '.svn', 'Makefile', 'package.json']
+let g:rooter_patterns = [
+  \'.git', 
+  \'_darcs',
+  \'.hg',
+  \'.bzr',
+  \'.svn',
+  \'Makefile',
+  \'package.json'
+\]
 
 " Disable rooter announcing that it changed directories when vim starts.
 let g:rooter_silent_chdir = 1
