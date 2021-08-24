@@ -1,6 +1,9 @@
 " Show line numbers.
 set number
 
+" Remove delay when pressing `Esc`.
+set esckeys
+
 " Set maximum text width to 80 characters.
 set textwidth=80
 
