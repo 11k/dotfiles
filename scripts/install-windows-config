@@ -13,7 +13,7 @@ APPDATA_DIR=$(wslpath "$(wslvar APPDATA)")
 
 ALACRITTY_CONFIG_DIR="$APPDATA_DIR/alacritty"
 mkdir -p "$ALACRITTY_CONFIG_DIR" && \
-  cp tochka/alacritty.win.yml "$ALACRITTY_CONFIG_DIR/alacritty.yml"
+  cp windows/alacritty.yml "$ALACRITTY_CONFIG_DIR/alacritty.yml"
 
 STREAMLINK_CONFIG_DIR="$APPDATA_DIR/streamlink"
 mkdir -p "$STREAMLINK_CONFIG_DIR" && \
