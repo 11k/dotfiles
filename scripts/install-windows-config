@@ -11,8 +11,10 @@ fi
 # a Windows path to a WSL path, e.g., `C:\Users` becomes `/mnt/c/Users`.
 APPDATA_DIR=$(wslpath "$(wslvar APPDATA)")
 
-# Alacritty checks for a config file at `%APPDATA%\alacritty\alacritty.yml`.
 ALACRITTY_CONFIG_DIR="$APPDATA_DIR/alacritty"
-
 mkdir -p "$ALACRITTY_CONFIG_DIR" && \
   cp tochka/alacritty.win.yml "$ALACRITTY_CONFIG_DIR/alacritty.yml"
+
+STREAMLINK_CONFIG_DIR="$APPDATA_DIR/streamlink"
+mkdir -p "$STREAMLINK_CONFIG_DIR" && \
+  cp tochka/config/streamlink/config "$STREAMLINK_CONFIG_DIR/config"

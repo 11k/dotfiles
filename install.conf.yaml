@@ -21,5 +21,6 @@
 
 - shell:
     -
-      command: scripts/install-alacritty-config.sh
-      description: Installing Alacritty config on Windows
+      command: scripts/install-windows-config
+      description: Installing Windows config files
+      stderr: true
