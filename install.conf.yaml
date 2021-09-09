@@ -16,3 +16,13 @@
       command: scripts/install-windows-config
       description: Installing Windows config files
       stderr: true
+    -
+      command: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+      description: Installing Homebrew
+      stdout: true
+      stderr: true
+    -
+      command: brew bundle --file brew/Brewfile
+      description: Installing Homebrew packages
+      stdout: true
+      stderr: true
