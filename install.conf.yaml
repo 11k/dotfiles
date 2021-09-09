@@ -17,12 +17,6 @@
       exclude: [ tochka/hammerspoon, tochka/config ]
 
 - shell:
-    -
-      command: scripts/install-windows-config
-      description: Installing Windows config files
-    -
-      command: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-      description: Installing Homebrew
-    -
-      command: brew bundle --file brew/Brewfile --no-lock
-      description: Installing Homebrew packages
+    - [scripts/install-windows-config, Installing Windows config files]
+    - [/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)", Installing Homebrew]
+    - [brew bundle --file brew/Brewfile --no-lock, Installing Homebrew packages]
