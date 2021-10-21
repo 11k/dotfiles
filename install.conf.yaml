@@ -18,5 +18,8 @@
 
 - shell:
     - [scripts/install-windows-config, Installing Windows config files]
-    - [/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)", Installing Homebrew]
+    -
+      command: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+      description: Installing Homebrew
+      stdin: true
     - [brew bundle --file brew/Brewfile --no-lock, Installing Homebrew packages]
