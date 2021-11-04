@@ -1,0 +1,16 @@
+#!/bin/bash
+
+function line_exists_in_file {
+  LINE="$1"
+  FILE="$2"
+
+  grep -qF -- "$LINE" "$FILE"
+  return
+}
+
+TARGET_SHELL=$1
+VALID_SHELLS_FILE=/etc/shells
+
+if ! line_exists_in_file "$TARGET_SHELL" "$VALID_SHELLS_FILE"; then
+  echo "$TARGET_SHELL" >> "$VALID_SHELLS_FILE"
+fi

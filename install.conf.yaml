@@ -23,3 +23,5 @@
       description: Installing Homebrew
       stdin: true
     - [brew bundle --file brew/Brewfile --no-lock, Installing Homebrew packages]
+    - [sudo scripts/add-shell $(which zsh), Adding zsh to list of allowed shells]
+    - [chsh -s $(which zsh), Changing default shell to zsh]
