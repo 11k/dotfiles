@@ -1,0 +1,9 @@
+BREW_PATH_MAC=/opt/homebrew/bin/brew
+if [[ -f $BREW_PATH_MAC ]]; then
+  eval "$($BREW_PATH_MAC shellenv)"
+fi
+
+BREW_PATH_LINUX=/linuxbrew/.linuxbrew/bin/brew
+if [[ -f $BREW_PATH_LINUX ]]; then
+  eval "$($BREW_PATH_LINUX shellenv)"
+fi
