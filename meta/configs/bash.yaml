@@ -1,0 +1,4 @@
+- link:
+    ~/.bashrc: tochka/bashrc
+    ~/.bash_profile: tochka/bash_profile
+    ~/.inputrc: tochka/inputrc

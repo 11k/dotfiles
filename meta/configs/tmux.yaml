@@ -1,0 +1,3 @@
+- link:
+    ~/.tmux.conf: tochka/tmux.conf
+    ~/.tmux: tochka/tmux

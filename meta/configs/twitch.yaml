@@ -1,0 +1,4 @@
+- link:
+    ~/.config/streamlink:
+      create: true
+      path: tochka/config/streamlink

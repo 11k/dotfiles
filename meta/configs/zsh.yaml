@@ -1,0 +1,5 @@
+- link:
+    ~/.zsh: tochka/zsh
+    ~/.oh-my-zsh: tochka/oh-my-zsh
+    ~/.zprofile: tochka/zprofile
+    ~/.zshrc: tochka/zshrc
