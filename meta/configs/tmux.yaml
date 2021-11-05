@@ -1,3 +1,6 @@
 - link:
     ~/.tmux.conf: tochka/tmux.conf
     ~/.tmux: tochka/tmux
+
+- shell:
+    - [brew install tmux, Installing tmux]

@@ -1,3 +1,6 @@
 - link:
     ~/.vim: tochka/vim
     ~/.vimrc: tochka/vimrc
+
+- shell:
+    - [brew install vim, Installing vim]
