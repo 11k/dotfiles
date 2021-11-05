@@ -1,7 +1,6 @@
 - clean: ['~']
 
-- shell:
-    -
-      command: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-      description: Installing Homebrew
-      stdin: true
+- defaults:
+    shell:
+      stdout: true
+      stderr: true
