@@ -9,14 +9,11 @@
     ~/.config/streamlink:
       create: true
       path: tochka/config/streamlink
-    ~/.hammerspoon:
-      if: '[ $(uname) = Darwin ]'
-      path: tochka/hammerspoon
     ~/:
       glob: true
       path: tochka/*
       prefix: '.'
-      exclude: [ tochka/hammerspoon, tochka/config ]
+      exclude: [ tochka/config ]
 
 - shell:
     - [scripts/install-windows-config, Installing Windows config files]
