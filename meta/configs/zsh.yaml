@@ -3,3 +3,7 @@
     ~/.oh-my-zsh: tochka/oh-my-zsh
     ~/.zprofile: tochka/zprofile
     ~/.zshrc: tochka/zshrc
+
+- shell:
+    - [sudo scripts/add-shell $(which zsh), Adding zsh to list of allowed shells]
+    - [chsh -s $(which zsh), Changing default shell to zsh]
