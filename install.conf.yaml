@@ -6,7 +6,9 @@
       stderr: true
 
 - link:
-    ~/.config/streamlink: tochka/config/streamlink
+    ~/.config/streamlink:
+      create: true
+      path: tochka/config/streamlink
     ~/.hammerspoon:
       if: '[ $(uname) = Darwin ]'
       path: tochka/hammerspoon
