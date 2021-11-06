@@ -1,5 +1,5 @@
 [submodule "dotbot"]
-	path = meta/dotbot
+	path = dotbot
 	url = https://github.com/anishathalye/dotbot
 	ignore = dirty
 [submodule "tochka/vim/pack/plugins/start/fzf"]
