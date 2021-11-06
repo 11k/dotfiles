@@ -3,4 +3,4 @@
     ~/.tmux: tochka/tmux
 
 - shell:
-    - [scripts/bb "brew 'tmux'", Installing tmux]
+    - [bin/bb "brew 'tmux'", Installing tmux]

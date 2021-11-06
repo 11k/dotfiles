@@ -5,6 +5,6 @@
     ~/.zshrc: tochka/zshrc
 
 - shell:
-    - [scripts/bb "brew 'zsh'; brew 'fzf'", Installing zsh and fzf]
-    - [sudo scripts/add-shell $(which zsh), Adding zsh to list of allowed shells]
+    - [bin/bb "brew 'zsh'; brew 'fzf'", Installing zsh and fzf]
+    - [sudo bin/add-shell $(which zsh), Adding zsh to list of allowed shells]
     - [chsh -s $(which zsh), Changing default shell to zsh]
