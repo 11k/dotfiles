@@ -3,4 +3,4 @@
     ~/.vimrc: tochka/vimrc
 
 - shell:
-    - [brew install vim, Installing vim]
+    - [scripts/bb "brew 'vim'", Installing vim]
