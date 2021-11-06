@@ -1,3 +1,8 @@
+- shell:
+    -
+      command: if [[ ! -z $WSL_DISTRO_NAME ]]; then cp tochka/config/streamlink/config "$(wslpath $(wslvar APPDATA))/streamlink/"; fi
+      description: Copying Streamlink config to Windows if on WSL
+
 - link:
     ~/.config/streamlink:
       create: true

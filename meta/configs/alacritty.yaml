@@ -1,2 +1,13 @@
+# `set | grep WSL` returns envivonment variables that only exist within WSL.
+# `WSL_DISTRO_NAME` is one such variable. Simply check for this variable to
+# determine if we're in WSL.
+
+# `wslvar` resolves Windows environment variables within WSL. `wslpath` converts
+# a Windows path to a WSL path, e.g., `C:\Users` becomes `/mnt/c/Users`.
+- shell:
+    -
+      command: if [[ ! -z $WSL_DISTRO_NAME ]]; then cp windows/alacritty.yml "$(wslpath $(wslvar APPDATA))/alacritty/"; fi
+      description: Copying Alacritty config to Windows if on WSL
+
 - link:
     ~/.alacritty.yml: tochka/alacritty.yml
