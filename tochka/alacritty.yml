@@ -63,10 +63,6 @@ colors:
 
 shell:
   program: zsh
-  args:
-    - -l
-    - -c
-    - '[ -z "$TMUX"  ] && { tmux attach || exec tmux new-session && exit; }'
 
 key_bindings:
   # Make alt act as meta for certain key combinations in macOS. The
@@ -80,8 +76,3 @@ key_bindings:
   - { key: K,              mods: Alt|Shift,          chars: "\x1BK"           }
   - { key: L,              mods: Alt,                chars: "\x1Bl"           }
   - { key: L,              mods: Alt|Shift,          chars: "\x1BL"           }
-
-  # Disable the `Control + Shift + F` search shortcut so we can use it to
-  # trigger ripgrep in vim. Only relevant in Windows.
-  # https://github.com/alacritty/alacritty/issues/4090#issuecomment-670264927
-  - { key: F,              mods: Control|Shift,      action: ReceiveChar      }

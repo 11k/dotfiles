@@ -65,11 +65,9 @@ colors:
 
 shell:
   program: "C:\\Windows\\System32\\wsl.exe"
-  args:
-    - '[ -z "$TMUX"  ] && { tmux attach || exec tmux new-session && exit; }'
 
 key_bindings:
   # Disable the `Control + Shift + F` search shortcut so we can use it to
   # trigger ripgrep in vim. Only relevant in Windows.
   # https://github.com/alacritty/alacritty/issues/4090#issuecomment-670264927
-  - { key: F,              mods: Control|Shift,      action: ReceiveChar      } 
+  - { key: F,              mods: Control|Shift,      action: ReceiveChar      }
