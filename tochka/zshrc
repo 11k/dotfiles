@@ -3,6 +3,7 @@ export ZSH=$HOME/.oh-my-zsh
 
 ZSH_THEME="sui"
 DISABLE_AUTO_UPDATE="true"
+DISABLE_AUTO_TITLE="true"
 ZSH_CUSTOM=$HOME/.zsh
 
 plugins=(ssh-agent)
