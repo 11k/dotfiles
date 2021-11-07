@@ -1,6 +1,0 @@
-- link:
-    ~/.vim: tochka/vim
-    ~/.vimrc: tochka/vimrc
-
-- shell:
-    - [bin/bb "brew 'vim'", Installing vim]
