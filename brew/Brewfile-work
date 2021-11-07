@@ -1,0 +1,5 @@
+brew 'fzf'
+brew 'ripgrep'
+brew 'tmux'
+brew 'vim'
+brew 'zsh'
