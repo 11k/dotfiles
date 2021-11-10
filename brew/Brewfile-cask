@@ -1,0 +1,13 @@
+# Apps
+cask 'alacritty'
+cask 'amethyst'
+cask 'chatterino'
+cask 'cursorsense'
+cask 'docker'
+cask 'google-chrome'
+cask 'keepassxc'
+cask 'mpv'
+
+# Fonts
+tap 'homebrew/cask-fonts'
+cask 'font-iosevka'
