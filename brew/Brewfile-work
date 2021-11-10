@@ -1,4 +1,5 @@
 brew 'fzf'
+brew 'htop'
 brew 'ripgrep'
 brew 'tmux'
 brew 'vim'

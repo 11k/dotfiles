@@ -1,5 +1,6 @@
 # Core
 brew 'fzf'
+brew 'htop'
 brew 'ripgrep'
 brew 'tmux'
 brew 'vim'
@@ -14,6 +15,7 @@ brew 'streamlink'
 
 # Apps
 cask 'alacritty'
+cask 'amethyst'
 cask 'chatterino'
 cask 'cursorsense'
 cask 'docker'
