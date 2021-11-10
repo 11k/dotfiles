@@ -12,16 +12,16 @@ window:
 font:
   normal:
     family: Iosevka
-    style: Regular
+    style: Light
 
   bold:
-    style: Bold
+    style: Medium
 
   italic:
-    style: Italic
+    style: Light Oblique
 
   bold_italic:
-    style: Bold Italic
+    style: Medium Oblique
 
   size: 14
 
