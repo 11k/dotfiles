@@ -1,14 +1,17 @@
 # Core
 brew 'fzf'
+brew 'git'
 brew 'htop'
 brew 'ripgrep'
 brew 'tmux'
 brew 'vim'
 brew 'zsh'
+brew 'youtube-dl'
 
 # Dev
 brew 'node'
 brew 'php'
+brew 'composer'
 
 # Twitch
 brew 'streamlink'
