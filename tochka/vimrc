@@ -1,3 +1,16 @@
+" List plugins to install via vim-plug with `:PlugInstall`.
+call plug#begin()
+Plug 'airblade/vim-rooter'
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
+Plug 'preservim/nerdtree'
+Plug 'prettier/vim-prettier'
+Plug 'sheerun/vim-polyglot'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+call plug#end()
+
 " Show line numbers.
 set number
 
