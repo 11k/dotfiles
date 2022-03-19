@@ -15,3 +15,4 @@ source $ZSH/oh-my-zsh.sh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 alias zshr="source ~/.zshrc"
+alias ssh="TERM=xterm ssh"
