@@ -1,3 +1,5 @@
 brew 'node'
 brew 'php'
 brew 'composer'
+
+cask 'docker'

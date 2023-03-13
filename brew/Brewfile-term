@@ -5,3 +5,8 @@ brew 'ripgrep'
 brew 'tmux'
 brew 'vim'
 brew 'zsh'
+
+cask 'alacritty'
+
+tap 'homebrew/cask-fonts'
+cask 'font-iosevka'
