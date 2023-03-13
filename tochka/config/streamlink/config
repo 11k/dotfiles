@@ -1,6 +1,0 @@
-default-stream=best
-player=mpv
-player-args=--geometry=512x288 --no-keepaspect-window --profile=low-latency
-title={author} - {category} - {title}
-loglevel=error
-twitch-low-latency

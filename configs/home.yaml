@@ -6,14 +6,10 @@
       stderr: true
 
 - link:
-    ~/.config/streamlink:
-      create: true
-      path: tochka/config/streamlink
     ~/:
       glob: true
       path: tochka/*
       prefix: '.'
-      exclude: [ tochka/config ]
 
 - shell:
     - [sudo true, Enabling sudo]

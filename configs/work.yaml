@@ -10,7 +10,7 @@
       glob: true
       path: tochka/*
       prefix: '.'
-      exclude: [ tochka/config, gitconfig, gitignore_global ]
+      exclude: [ gitconfig, gitignore_global ]
 
 - shell:
     - [sudo true, Enabling sudo]

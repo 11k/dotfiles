@@ -1,7 +1,6 @@
 # Apps
 cask 'alacritty'
 cask 'amethyst'
-cask 'chatterino'
 cask 'cursorsense'
 cask 'docker'
 cask 'google-chrome'
