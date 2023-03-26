@@ -1,0 +1,14 @@
+- clean: ['~']
+
+- defaults:
+    shell:
+      stdout: true
+      stderr: true
+
+- link:
+    ~/:
+      glob: true
+      path: tochka/*
+      prefix: '.'
+      exclude: [ gitconfig, gitignore_global ]
+      create: true
