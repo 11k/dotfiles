@@ -1,4 +1,4 @@
-brew 'node'
+brew 'nvm'
 brew 'php'
 brew 'composer'
 
