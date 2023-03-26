@@ -1,6 +1,7 @@
 brew 'fzf'
 brew 'git'
 brew 'htop'
+brew 'neovim'
 brew 'ripgrep'
 brew 'tmux'
 brew 'vim'
