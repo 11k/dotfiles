@@ -6,9 +6,11 @@
       stderr: true
 
 - link:
+    ~/.config/nvim:
+      create: true
+      path: tochka/config/nvim
     ~/:
       glob: true
       path: tochka/*
       prefix: '.'
-      exclude: [ gitconfig, gitignore_global ]
-      create: true
+      exclude: [ tochka/config ]
