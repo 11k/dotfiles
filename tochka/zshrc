@@ -19,3 +19,4 @@ export NVM_DIR="$HOME/.nvm"
 
 alias zshr="source ~/.zshrc"
 alias ssh="TERM=xterm ssh"
+alias vim="nvim"
