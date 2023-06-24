@@ -52,6 +52,7 @@ set clipboard=unnamed,unnamedplus
 
 " Reload a file when it changes on disk.
 set autoread
+autocmd FocusGained * :checktime
 
 " Disable mouse support.
 set mouse=
