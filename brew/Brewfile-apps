@@ -1,5 +1,6 @@
 cask 'amethyst'
 cask 'cursorsense'
+cask 'docker'
 cask 'google-chrome'
 cask 'keepassxc'
 cask 'mpv'

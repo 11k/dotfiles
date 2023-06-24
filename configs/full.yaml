@@ -19,7 +19,6 @@
     - [sudo true, Enabling sudo]
     - [echo | /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)", Installing Homebrew]
     - [brew bundle --no-lock --file brew/Brewfile-term, Installing packages for terminal]
-    - [brew bundle --no-lock --file brew/Brewfile-dev, Installing dev packages]
     - [brew bundle --no-lock --file brew/Brewfile-apps, Installing apps]
     - [sudo bin/add-shell $(which zsh), Adding zsh to list of allowed shells]
     - [chsh -s $(which zsh), Changing default shell to zsh]

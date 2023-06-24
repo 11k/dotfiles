@@ -1,5 +1,0 @@
-brew 'nvm'
-brew 'php'
-brew 'composer'
-
-cask 'docker'
