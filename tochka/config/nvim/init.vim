@@ -133,5 +133,5 @@ let g:prettier#config#tab_width = 2
 
 augroup prettier
     autocmd!
-    autocmd BufWritePre *.js,*.ts,*.json,*.html.twig,*.html,*.jsx,*.tsx PrettierAsync
+    autocmd BufWritePre *.js,*.ts,*.json,*.html.twig,*.html,*.jsx,*.tsx,*.css,*.scss PrettierAsync
 augroup END
