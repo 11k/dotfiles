@@ -12,6 +12,10 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 export EDITOR=nvim
+
+# https://www.mediawiki.org/wiki/Continuous_integration/Phan#Running_Phan
+export MW_INSTALL_PATH=/Users/jay/Programming/mediawiki
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 export NVM_DIR="$HOME/.nvm"
