@@ -25,3 +25,19 @@ export NVM_DIR="$HOME/.nvm"
 alias zshr="source ~/.zshrc"
 alias ssh="TERM=xterm ssh"
 alias vim="nvim"
+
+# Prettify SOAP XML
+# Assumes prettier and @prettier/plugin-xml are installed globally.
+function psoap () {
+    # Remove escaping from double quotes.
+    sed -i "" 's/\\"/"/g' "$1"
+
+    # https://github.com/prettier/plugin-xml
+    prettier \
+        --xml-whitespace-sensitivity ignore \
+        --single-attribute-per-line \
+        --print-width 9999 \
+        --tab-width 4 \
+        --write \
+        "$1"
+}
