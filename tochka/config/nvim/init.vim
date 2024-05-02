@@ -86,6 +86,11 @@ require'lspconfig'.tsserver.setup{
 }
 EOF
 
+" https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#golangci_lint_ls
+lua <<EOF
+require'lspconfig'.golangci_lint_ls.setup{}
+EOF
+
 " https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#phpactor
 lua <<EOF
 require'lspconfig'.phpactor.setup{}
