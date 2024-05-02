@@ -86,6 +86,11 @@ require'lspconfig'.tsserver.setup{
 }
 EOF
 
+" https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#phpactor
+lua <<EOF
+require'lspconfig'.phpactor.setup{}
+EOF
+
 lua <<EOF
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
@@ -134,5 +139,5 @@ let g:prettier#config#trailing_comma = 'all'
 
 augroup prettier
     autocmd!
-    autocmd BufWritePre *.js,*.ts,*.json,*.html.twig,*.html,*.jsx,*.tsx,*.css,*.scss PrettierAsync
+    autocmd BufWritePre *.js,*.ts,*.json,*.html.twig,*.html,*.jsx,*.tsx,*.css,*.scss,*.php PrettierAsync
 augroup END
