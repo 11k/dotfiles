@@ -130,6 +130,7 @@ EOF
 " Ensure vim-prettier's default tab width matches prettier's default tab
 " width.
 let g:prettier#config#tab_width = 2
+let g:prettier#config#trailing_comma = 'all'
 
 augroup prettier
     autocmd!
