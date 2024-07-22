@@ -4,7 +4,7 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' }
 Plug 'tpope/vim-vinegar'
 Plug 'itchyny/lightline.vim'
-Plug 'catppuccin/vim', { 'as': 'catppuccin' }
+Plug 'rebelot/kanagawa.nvim'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'neovim/nvim-lspconfig'
@@ -62,11 +62,10 @@ set mouse=
 :nnoremap <C-F> :lua require'telescope.builtin'.live_grep{}<Enter>
 
 " Set theme.
-:colorscheme catppuccin_frappe
+:colorscheme kanagawa-dragon
 
 " Configure lightline.
 set noshowmode
-let g:lightline = { 'colorscheme': 'catppuccin_frappe' }
 
 " Configure Tree-sitter.
 lua <<EOF
