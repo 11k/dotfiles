@@ -6,7 +6,7 @@ DISABLE_AUTO_UPDATE="true"
 DISABLE_AUTO_TITLE="true"
 ZSH_CUSTOM=$HOME/.zsh
 
-plugins=(ssh-agent)
+plugins=(ssh-agent direnv)
 
 source $ZSH/oh-my-zsh.sh
 
