@@ -12,6 +12,9 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+-- Set leader key to semicolon
+vim.g.mapleader = ";"
+
 -- Plugin specifications
 require("lazy").setup({
   "nvim-lua/plenary.nvim",
