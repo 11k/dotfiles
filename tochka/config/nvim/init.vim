@@ -83,7 +83,7 @@ lua <<EOF
 require'lspconfig'.psalm.setup{
     cmd = { "vendor/bin/psalm-language-server", "--use-baseline=baseline.xml", "--show-diagnostic-warnings=false" },
 }
-require'lspconfig'.tsserver.setup{
+require'lspconfig'.ts_ls.setup{
     cmd = { "npx", "typescript-language-server", "--stdio" },
 }
 EOF
