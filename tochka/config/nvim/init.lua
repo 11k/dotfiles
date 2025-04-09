@@ -32,6 +32,16 @@ require("lazy").setup({
 vim.opt.number = true
 vim.opt.relativenumber = true
 
+-- Configure diagnostic display
+vim.diagnostic.config({
+  virtual_text = {
+    prefix = '●',
+    spacing = 2,
+  },
+  signs = false,
+  severity_sort = true,
+})
+
 -- Highlight settings
 local highlightColor = "#3a3a3a"
 vim.opt.cursorline = true
