@@ -152,3 +152,6 @@ vim.api.nvim_create_autocmd("BufWritePre", {
   pattern = { "*.js", "*.ts", "*.json", "*.html.twig", "*.html", "*.jsx", "*.tsx", "*.css", "*.scss", "*.php" },
   command = "PrettierAsync",
 }) 
+
+-- Display one status line across entire window
+vim.opt.laststatus = 3
