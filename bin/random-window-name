@@ -1,0 +1,8 @@
+#!/bin/sh
+
+names="orion luna vega titan nova lyra ceres io juno atlas helios rigel sirius castor draco phoenix pyxis gemini aquila leo"
+set -- $names
+count=$#
+index=$(( $(od -An -tu4 -N4 /dev/urandom | tr -d ' ') % count + 1 ))
+eval name=\${$index}
+tmux rename-window "$name"
