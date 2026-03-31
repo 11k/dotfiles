@@ -88,26 +88,6 @@ chars = "\u001BL"
 key = "L"
 mods = "Alt|Shift"
 
-[[keyboard.bindings]]
-chars = "\u001B\u0008"
-key = "H"
-mods = "Control|Alt"
-
-[[keyboard.bindings]]
-chars = "\u001B\u000A"
-key = "J"
-mods = "Control|Alt"
-
-[[keyboard.bindings]]
-chars = "\u001B\u000B"
-key = "K"
-mods = "Control|Alt"
-
-[[keyboard.bindings]]
-chars = "\u001B\u000C"
-key = "L"
-mods = "Control|Alt"
-
 [shell]
 program = "zsh"
 
