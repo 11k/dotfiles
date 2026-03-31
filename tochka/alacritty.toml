@@ -49,6 +49,16 @@ family = "Iosevka"
 style = "Light"
 
 [[keyboard.bindings]]
+chars = "\u001Bb"
+key = "Left"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u001Bf"
+key = "Right"
+mods = "Alt"
+
+[[keyboard.bindings]]
 chars = "\u001Bh"
 key = "H"
 mods = "Alt"
