@@ -14,3 +14,7 @@
       path: tochka/*
       prefix: '.'
       exclude: [ tochka/config ]
+    ~/bin:
+      create: true
+      glob: true
+      path: bin/*
