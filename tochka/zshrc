@@ -41,3 +41,20 @@ function psoap () {
         --write \
         "$1"
 }
+
+function gyoink() {
+    if [[ $# -eq 0 ]]; then
+        local month=$(date +%m)
+        local day=$(date +%d)
+    elif [[ $# -eq 1 ]]; then
+        local month=$(date +%m)
+        local day="$1"
+    else
+        local month="$1"
+        local day="$2"
+    fi
+    local date="$(date +%Y)-$month-$day"
+    local count=$(git log --after="$date 00:00" --before="$date 23:59:59" --oneline | wc -l | tr -d ' ')
+    git log --after="$date 00:00" --before="$date 23:59:59" --reverse --format="%s" | pbcopy
+    echo "Copied $count commit message(s) from $date to clipboard."
+}
